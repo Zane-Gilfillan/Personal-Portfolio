@@ -10,9 +10,19 @@
 
 .nav-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 5rem 10rem;
+    margin: 1rem 8rem 3rem 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .logo {
+        font-weight: 100;
+        transition: 300ms;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
 
    .nav-links {
        display: flex;
@@ -23,16 +33,18 @@
            padding: 1rem;
            text-decoration: none;
            list-style: none;
+           font-weight: 700;
        }
 
        a {
            text-decoration: none;
            color: inherit;
-       }
+           transition: 300ms;
 
-       a:hover {
-           opacity: .5;
-       }
+           &:hover {
+            opacity: .5;
+        }
+       }  
    }
 }
 
@@ -43,23 +55,23 @@
     .text-holder {
         text-align: left;
         line-height: .8;
-        font-size: 5em;
+        font-size: 6.1em;
         position: relative;
         bottom: 2.5rem;
-        word-breaK:break-all
+        word-break: break-all;
     }
     
     .img-holder {
         overflow: hidden;
+        transition: opacity 1 800ms ease-out;
 
         img {
             animation: zoom 55s;
-            transition: opacity 1 800ms ease-in;
-            
+            transition: 3000ms;
         }
 
-        &:hover {
-            opacity: .2;
+        img:hover {
+            opacity: .1;
             transition: opacity 800ms ease-in;
         }
 
