@@ -11,12 +11,25 @@
 .main-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
+    gap: 7rem;
     justify-content: center;
     align-items: center;
     text-align: left;
     height: auto;
     width: auto;
+}
+
+
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: auto;
+    width: auto;
+    
 }
 
 @keyframes zoom {
