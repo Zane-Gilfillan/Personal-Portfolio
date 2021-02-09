@@ -109,20 +109,19 @@
         overflow: none;
 
         i {
-            padding: 1rem 0;
+            padding: 1rem;
             margin: 0;
-            animation: bob-on-hover;
+            width: 100%;
+            transition: 200ms ease-in;
         }
 
         i:hover {
             opacity: .5;
         }
-    }
-
-    .icon-holder {
-        position: relative;
-        left: 1rem;
-    }
+    }  
 }       
  
+.screen-push {
+    height: 5000px;
+}
 
