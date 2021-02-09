@@ -1,0 +1,46 @@
+
+@media screen and (max-width: 1024px) {
+    .second-grid {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+        &.nav-bar {
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 8rem;
+            z-index: 1;
+            color: rgb(43, 34, 41);
+        }
+
+        .logo {
+            display: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+    }
+
+    
+
+    
+    
+
+   
+
+
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .text-holder {
+        display: none;
+    }
+
+}

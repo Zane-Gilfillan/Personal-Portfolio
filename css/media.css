@@ -1,0 +1,2 @@
+@media screen and (max-width: 1024px){.second-grid{gap:1rem}}@media screen and (max-width: 375px){nav.nav-bar{padding:0;margin:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around;margin-left:8rem;z-index:1;color:#2b2229}nav .logo{display:none;margin:0;padding:0}.main-grid{display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[1];grid-template-columns:repeat(1, 1fr)}.text-holder{display:none}}
+/*# sourceMappingURL=media.css.map */
