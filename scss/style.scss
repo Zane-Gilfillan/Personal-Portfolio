@@ -48,6 +48,7 @@
 
            &:hover {
             opacity: .5;
+            color:rgb(134, 84, 160)
         }
        }  
    }
@@ -60,9 +61,10 @@
     align-items: center;
 
     .text-holder {
+        margin-left: 3rem;
         text-align: left;
         line-height: .8;
-        font-size: 6.1em;
+        font-size: 7.0em;
         position: relative;
         bottom: 2.5rem;
         word-break: break-all;
@@ -70,6 +72,7 @@
     
     .img-holder {
         overflow: hidden;
+        max-width: 500px;
         transition: opacity 1 1200ms ease-out;
 
         img {
@@ -124,7 +127,7 @@
         }
 
         i:hover {
-            opacity: .5;
+            opacity: .8;
             color: rgb(134, 84, 160);
         }
     }  
@@ -151,6 +154,15 @@
     }
 }
  
+.audio {
+    text-align: right;
+
+    h1 {
+        font-size: 10rem;
+        margin-right: 5rem;
+    }
+}
+
 .screen-push {
     height: 5000px;
 }
