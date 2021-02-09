@@ -30,6 +30,17 @@
     // width: auto;
 }
 
+.third-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    // height: auto;
+    // width: auto;
+}
+
 
 
 .icon-grid {
