@@ -2,17 +2,22 @@
 @import 'media.scss';
 
 
+:root {
+    --clr-background: rgb(246, 244, 247);
+    --clr-hover: rgb(134, 84, 160);
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: rgb(246, 244, 247);
+}
+
+body {
+    background: var(--clr-background);
 }
 
 //nav bar
-
-
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -48,7 +53,7 @@
 
            &:hover {
             opacity: .5;
-            color:rgb(134, 84, 160)
+            color: var(--clr-hover);
         }
        }  
    }
@@ -103,7 +108,7 @@
     
     .title-text {
         position: relative;
-        bottom: 4rem;
+        bottom: 1rem;
         font-size: 8rem;
         line-height: .8;
         padding: 2rem 0;
@@ -112,7 +117,7 @@
 
     .bio-info {
         position: relative;
-        bottom: 3rem;
+        bottom: 1rem;
         font-size: 2rem;
         line-height: .8;
         padding: 2rem 0;
@@ -128,7 +133,7 @@
 
         i:hover {
             opacity: .8;
-            color: rgb(134, 84, 160);
+            color: var(--clr-hover);
         }
     }  
 } 
