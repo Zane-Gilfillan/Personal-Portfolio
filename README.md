@@ -26,3 +26,6 @@ this has proven the most difficult for me due to the lack of space. so i'm strug
 
 ![iphone](img/final-builds/iphone-design.png)
 
+# visit
+
+the portfolio can be accessed here for the time being: https://zane-gilfillan.github.io/Personal-Portfolio/
