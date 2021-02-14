@@ -91,8 +91,10 @@ body {
 
 //bio section
 .about-me {
-    max-width: 1300px;
+    max-width: 1000px;
     margin-top: 3rem;
+    margin-left: 28rem;
+    margin-right: 28rem;
     justify-content: center;
     align-items: center;
     
@@ -148,7 +150,7 @@ body {
 
     h1 {
         font-size: 10rem;
-        margin-left: 16.5rem ;
+        margin-left: 7.5rem ;
         padding-bottom: 1rem;
         
     }
@@ -188,26 +190,22 @@ body {
 
 //media qs
 
-//iPad Pro Design
+//screen crack
 
-@media screen and (max-width: 1024px) {
-    .showcase {
-        .text-holder {
-            margin-top: 1.5rem;
-            font-size: 6em;
-        }
-    }
-}
-
-
-//iPad design
-
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1070px) {
     body {
         background-image: url(../img/show2.jpg);
         background-size: cover;
         color: var(--clr-light);
+    }
+
+    nav {
+        .nav-bar {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
     }
 
     .showcase {
@@ -230,6 +228,134 @@ body {
 
         .img-holder {
             display: none;
+        }
+    }
+
+    .about-me {
+
+        margin-left: 15rem;
+
+        .profile-img {
+            img {
+                width: 400px;
+                z-index: -1;
+                position: relative;
+                left: 8rem;
+                opacity: .5;
+            }
+        }
+        .second-grid {
+            display: grid;
+            gap: .5rem;
+        }
+    }
+
+    .design {
+        width: 95%;
+        .design-header {
+            h1 {
+                margin-left: 5rem;
+            }
+            
+        }
+
+        .third-grid {
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .app-holder {
+            width: 100%;
+            
+        }
+
+        .app-info {
+            i {
+                opacity: .5;
+                transition: 200ms ease-in;
+
+                &:hover {
+                    color: var(--clr-light);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//iPad Pro Design
+
+@media screen and (max-width: 1024px) {
+    .showcase {
+        .text-holder {
+            margin-top: 1.5rem;
+            font-size: 6em;
+        }
+    }
+}
+
+
+//iPad design
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: url(../img/show2.jpg);
+        background-size: cover;
+        color: var(--clr-light);
+    }
+
+
+    .showcase {
+        margin-bottom: 2rem;
+
+        .main-grid {
+            display: flex;
+        }
+
+        .text-holder {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            text-align: left;
+            line-height: .8;
+            font-size: 8em;
+            position: relative;
+            bottom: 2.5rem;
+            word-break: break-all;
+        }
+
+        .img-holder {
+            display: none;
+        }
+    }
+
+    .about-me {
+
+        margin-left: 15rem;
+
+        .profile-img {
+            img {
+                width: 400px;
+                z-index: -1;
+                position: relative;
+                left: 8rem;
+                opacity: .5;
+            }
+        }
+        .second-grid {
+            display: grid;
+            gap: .5rem;
         }
     }
 
