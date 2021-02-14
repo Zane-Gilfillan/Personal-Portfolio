@@ -5,12 +5,17 @@
 :root {
     --clr-background: rgb(246, 244, 247);
     --clr-hover: rgb(134, 84, 160);
+    --clr-light: rgb(231, 208, 208);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    a {
+        color: inherit;
+    }
 }
 
 body {
@@ -39,7 +44,6 @@ body {
 
        a {
            text-decoration: none;
-           color: inherit;
            transition: 300ms;
 
            &:hover {
@@ -99,6 +103,7 @@ body {
     }
     
     .title-text {
+        display: block;
         position: relative;
         bottom: 1rem;
         font-size: 8rem;
@@ -108,6 +113,7 @@ body {
     }
 
     .bio-info {
+        display: block;
         position: relative;
         bottom: 1rem;
         font-size: 2rem;
@@ -159,8 +165,7 @@ body {
             &:hover {
                 opacity: .5;
                 cursor: pointer;
-            }
-            
+            } 
         }
 
         .app-info {
@@ -178,14 +183,8 @@ body {
                 }
             }
         }
-
-        
-
     }
 }
-
-
-
 
 //media qs
 
@@ -198,6 +197,7 @@ body {
     
 }
 
+
 @media screen and (max-width: 1110px) {
     
     body {
@@ -205,7 +205,7 @@ body {
         align-items: center;
     }
 
-    .nav-bar {
+    nav {
         justify-content: center;
         align-items: center;
     }
@@ -220,13 +220,83 @@ body {
             display: none;
         }
     }
-}   
 
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .profile-img {
+            display: none;
+        }
+    }    
 
+    .design {
+        h1 {
+            margin: 0 auto;
+        }
+        .third-grid {
+            display: flex;
+            
+            .app-holder {
+                width: 100%;
+            }
+        }
+    }
+} 
 
-.screen-push {
-    height: 5000px;
+@media screen and (max-width: 375px) {
+
+    body {
+        background: url(../img/show2.jpg);
+        height: 100vh;
+        color: var(--clr-light)
+    }
+
+    .showcase {
+        display: none;
+    }
+
+    .about-me {
+        width: auto;
+        margin-left: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .title-text {
+            font-size: 5rem;
+        }
+
+        .icon-holder {
+            margin-bottom: -3rem;
+        }
+    }
+
+    .design {
+        text-align: center;
+        h1 {
+            font-size: 5rem;
+        }
+
+        .third-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .app-info {
+            i {
+                display: none;
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
 
 
 
