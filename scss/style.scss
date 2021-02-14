@@ -188,13 +188,74 @@ body {
 
 //media qs
 
-//iPad Pro design
+//iPad Pro Design
 
-@media screen and (max-width: 1024) {
-    body {
-        display: none;
+@media screen and (max-width: 1024px) {
+    .showcase {
+        .text-holder {
+            margin-top: 1.5rem;
+            font-size: 6em;
+        }
     }
 }
+
+
+//iPad design
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-image: url(../img/show2.jpg);
+        background-size: cover;
+        color: var(--clr-light);
+    }
+
+    .showcase {
+        margin-bottom: 2rem;
+
+        .main-grid {
+            display: flex;
+        }
+
+        .text-holder {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            text-align: left;
+            line-height: .8;
+            font-size: 8em;
+            position: relative;
+            bottom: 2.5rem;
+            word-break: break-all;
+        }
+
+        .img-holder {
+            display: none;
+        }
+    }
+
+    .design {
+        width: 100%;
+        .design-header {
+            h1 {
+                margin-left: 5rem;
+            }
+            
+        }
+
+        .third-grid {
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .app-holder {
+            width: 100%;
+            
+        }
+    }
+}
+
 
 
 
@@ -255,7 +316,7 @@ body {
         }
 
         .app-holder {
-            width: 150%;
+            width: 100%;
             
         }
 
@@ -266,6 +327,7 @@ body {
         }
     }
 }
+
 
 
 
