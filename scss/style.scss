@@ -188,62 +188,17 @@ body {
 
 //media qs
 
-@media screen and (max-width: 1282px) {
-    .text-holder {
-        font-size: 6.0em;
-        position: relative;
-        top: 3rem;
+//iPad Pro design
+
+@media screen and (max-width: 1024) {
+    body {
+        display: none;
     }
-    
 }
 
 
-@media screen and (max-width: 1110px) {
-    
-    body {
-        justify-content: center;
-        align-items: center;
-    }
 
-    nav {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .showcase {
-        
-        .main-grid {
-            display: flex; 
-        }
-
-        .text-holder {
-            display: none;
-        }
-    }
-
-    .about-me {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .profile-img {
-            display: none;
-        }
-    }    
-
-    .design {
-        h1 {
-            margin: 0 auto;
-        }
-        .third-grid {
-            display: flex;
-            
-            .app-holder {
-                width: 100%;
-            }
-        }
-    }
-} 
-
+//iPhone X design
 @media screen and (max-width: 375px) {
 
     body {
@@ -257,14 +212,24 @@ body {
     }
 
     .about-me {
+
+        .second-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         width: auto;
-        margin-left: 2rem;
+        margin-left: 13rem;
         justify-content: center;
         align-items: center;
         text-align: center;
 
+        .profile-img {
+            display: none;
+        }
+
         .title-text {
-            font-size: 5rem;
+            font-size: 8rem;
         }
 
         .icon-holder {
@@ -274,13 +239,24 @@ body {
 
     .design {
         text-align: center;
-        h1 {
-            font-size: 5rem;
+        
+        .design-header {
+            h1 {
+                margin-left: 3rem;
+                font-size: 7rem;
+            }
         }
 
         .third-grid {
+            align-items: center;
+            justify-content: center;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        .app-holder {
+            width: 150%;
+            
         }
 
         .app-info {
